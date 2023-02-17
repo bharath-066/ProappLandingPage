@@ -1,0 +1,94 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing:border-box;
+    font-size: 20px;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+.top-section{
+    background: url("/assets/bg.png");
+    background-size: cover;
+    padding-top: 41px;
+    height: 100%;
+}
+.navbar-logo-and-list{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.logo{
+    cursor: pointer;
+}
+.logo > img{
+    height: 90px;
+    width: 90px;
+}
+.navbar-items-container {
+    width: 50%;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.navbar-item{
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+.top-nav-button , .sign-up{
+    background-color: rgb(84, 1, 250);
+    color: rgb(178,250,249);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(178,250,249);
+}
+.top-nav-button:hover{
+    color: rgb(84, 1, 250);
+    background-color: white;
+    transition: 0.5s;
+}
+.top-nav-button:active{
+    transform: scale(0.9);
+}
+.top-section-div{
+    width: 85%;
+    height: 70vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+}
+.top-section-div-content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+.top-section-div-content > h1{
+    font-size: 40px;
+}
+.top-section-div-sign-up-button-div{
+    text-align: center;
+}
+.top-section-div-sign-up-button-div > .sign-up{
+    cursor: pointer;
+}
+.top-section-div-svg-image-design > .image-tag{
+    width: 110%;
+    height: 65vh;
+}
+.developers-section{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+}
+.developers-section-content > h1{
+    font-size: 40px;
+}
+.developers-section-content > h5{
+    margin-top: 50px;
+}
+.de
