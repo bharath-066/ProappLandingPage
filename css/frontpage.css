@@ -80,14 +80,10 @@ html,body{
 .inner-ul > li > a{
 	text-decoration: none;
 	color: rgb(28,30,44);
-	font-size: 23px;
+	font-size: 25px;
 }
 .inner-ul > li:hover{
-	font-weight: 600;
-	transform: scale(1.2);
-}
-.inner-ul > li > a:hover{
-	text-decoration: underline;
+	transform: scale(1.1);
 }
 .login-link{
 	padding: 0 5% 0 0;
@@ -96,18 +92,15 @@ html,body{
 	border: none;
 	cursor: pointer;
 	font-size: 25px;
-	font-weight: 600;
-	padding: 10px 20px;
-	margin: 13px 5px 0 0;
-	border-radius: 15px;
-	border: 1.5px solid black;
-	background-color: white;
-	color: rgb(28,30,44);
+	padding: 5px 10px;
+	border-radius: 5px;
+	background-color: rgb(28,30,44);
+	color: rgba(255,255,255,0.9);
 	transition: 0.5s;
 }
 .login-link-btn:hover{
-	color: white;
-	background-color: rgb(28,30,44);
+	color: rgb(28,30,44);
+	background-color: rgba(255,255,255,0.9);
 }
 .login-link-btn:active{
 	transform: scale(0.9);
@@ -131,7 +124,15 @@ html,body{
 	width: 30%;
 	line-height: 2;
 	font-size: 18px;
-	text-align: justify;
+	text-align: center;
+}
+.lorem > .login-link-btn{
+	transition: 0s;
+	color: white;
+}
+.lorem > .login-link-btn:hover{
+	background-color: rgba(28,30,44,0.8);
+	color: rgba(255,255,255);
 }
 .lorem > h1{
 	padding: 10px;
@@ -152,6 +153,7 @@ html,body{
 	background-color: rgb(28,30,44);
 	text-align: center;
 	padding: 60px 0;
+	margin-top: 90px;
 }
 .developers > div{
 	width: 85%;
@@ -202,6 +204,7 @@ html,body{
 	z-index: 2;
 }
 .arrows{
+	cursor: pointer;
 	padding: 15px 18px;
 	background-color: rgba(255,255,255,0.8);
 	font-size: 30px;
@@ -210,11 +213,10 @@ html,body{
 	transition: O.4s;
 }
 .arrows:hover{
-	transform: scale(0.8);
 	background-color: rgba(255,255,255);
 }
 .arrows:active{
-	transform: scale(1.1);
+	transform: scale(0.9);
 }
 #right-arrow{
 	background-color: rgb(28,30,44);

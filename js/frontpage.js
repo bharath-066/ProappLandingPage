@@ -38,8 +38,6 @@ function developerScrollLeft() {
     ScrollBox.style.transform = `translateX(${translateValue}%)`;
 }
 
-setInterval(developerScrollRight, 3000);
-
 HAMBURGER.addEventListener("click",()=>{
 	Hamburger();
 });
