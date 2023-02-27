@@ -1,94 +1,185 @@
 *{
-    padding: 0%;
-    margin: 0%;
-    box-sizing:border-box;
-    font-size: 20px;
-    font-family: sans-serif;
-    scroll-behavior: smooth;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
 }
-.top-section{
-    background: url("/assets/bg.png");
-    background-size: cover;
-    padding-top: 41px;
-    height: 100%;
-}
-.navbar-logo-and-list{
+.x-axis-flex{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+}
+.y-axis-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.full-body{
+    max-width: 1450px;
+    margin: auto;
     width: 100%;
 }
-.logo{
-    cursor: pointer;
-}
-.logo > img{
-    height: 90px;
-    width: 90px;
-}
-.navbar-items-container {
-    width: 50%;
-    display: flex;
-    list-style-type: none;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.navbar-item{
-    cursor: pointer;
-    text-decoration: none;
-    color: black;
-}
-.top-nav-button , .sign-up{
-    background-color: rgb(84, 1, 250);
-    color: rgb(178,250,249);
+.top-header{
+    width: 100%;
+    position: relative;
     padding: 10px;
-    border-radius: 5px;
-    border: 1px solid rgb(178,250,249);
 }
-.top-nav-button:hover{
-    color: rgb(84, 1, 250);
-    background-color: white;
-    transition: 0.5s;
+.top-icon{
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/assets/faviconProapp-modified.png");
 }
-.top-nav-button:active{
+#hamburger-icon-id{
+    display: none;
+}
+.hamburger-menu{
+    display: none;
+    font-size: 25px;
+}
+.top-navigation-wrapper{
+    width: 90%;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+.nav-bar-options-wrapper {
+    flex-grow: 1;
+    width: 70%;
+    justify-content: flex-start;
+}
+.login-buttons{
+    width: 20%;
+    justify-content: space-around;
+    transition: 0s;
+}
+.common-button{
+    padding: 10px;
+    background-color: rgb(89,141,241);
+    color: white;
+    border: none;   
+    border-radius: 10px;
+    font-size: 18px;
+    transition: 0.4s;
+}
+.common-button:active {
     transform: scale(0.9);
 }
-.top-section-div{
-    width: 85%;
-    height: 70vh;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: auto;
-}
-.top-section-div-content{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    text-align: justify;
-}
-.top-section-div-content > h1{
-    font-size: 40px;
-}
-.top-section-div-sign-up-button-div{
-    text-align: center;
-}
-.top-section-div-sign-up-button-div > .sign-up{
+.sign-in-button , .sign-up-button{
     cursor: pointer;
 }
-.top-section-div-svg-image-design > .image-tag{
-    width: 110%;
-    height: 65vh;
+.sign-up-button{
+    background-color: white;
+    color: black;
+    border: 1px solid rgba(0,0,0,0.3);
 }
-.developers-section{
-    width: 80%;
+.sign-up-button:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+.sign-in-button:hover {
+    background-color: rgba(89,141,241,0.85);
+}
+.nav-bar-option{
+    text-decoration: none;
+    color: black;
+    margin: 0px 15px;
+}
+.nav-bar-option li {
+    font-size: 20px;
+    list-style-type: none;
+}
+
+
+
+.center-image-content-section{
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: auto;
+}
+.left-content-div{
+    width: 40%;
     display: flex;
     flex-direction: column;
-    margin: auto;
+    justify-content: center;
+    font-size: 21px;
     text-align: center;
+    line-height: 2;
 }
-.developers-section-content > h1{
-    font-size: 40px;
+.right-image-div img{
+    height: 600px;
+    width: 700px;
 }
-.developers-section-content > h5{
-    margin-top: 50px;
+
+
+
+@media screen and (max-width: 1100px){
+    .right-image-div img{
+        height: 500px;
+        width: 600px;
+    }
 }
-.de
+@media screen and (max-width: 1000px){
+    .center-image-content-section{
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .left-content-div{
+        width: 50%;
+    }
+    .right-image-div img{
+        height: 600px;
+        width: 700px;
+    }
+}
+@media screen and (max-width: 957px) {
+    .login-buttons{
+        display: none;
+    }
+    .hamburger-menu{
+        display: block;
+    }
+    .nav-bar-options-wrapper{
+        position: absolute;
+        flex-direction: column;
+        top: 100%;
+        width: 95%;
+        padding: 0px;
+        height: 0px;
+        transition: 0.5s;
+        overflow: hidden;
+        background-color: rgb(235,237,239);
+        margin: auto;
+    }
+    .nav-bar-option{
+        text-align: center;
+        padding: 10px;
+        width: 100%;
+    }
+    .nav-bar-option:hover {
+        background-color: white;
+    }
+    #hamburger-icon-id:checked + .nav-bar-options-wrapper{
+        height: 215px;
+    }
+}
+
+@media screen and (max-width:700px){
+    .left-content-div{
+        line-height: 1.5;
+        width: 70%;
+    }
+    .right-image-div img{
+        height: 500px;
+        width: 500px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .right-image-div img{
+        height: 350px;
+        width: 400px;
+    }
+}
